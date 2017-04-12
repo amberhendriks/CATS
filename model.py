@@ -4,6 +4,7 @@ from sklearn.svm import SVC
 from sklearn.model_selection import StratifiedKFold
 from sklearn.feature_selection import RFECV
 from sklearn.datasets import make_classification
+from sklearn.cross_validation import train_test_split
 
 #Variables
 TEST_SIZE = 0.1
@@ -46,4 +47,3 @@ def SVC_crossvalidation(X,y):
 X,y = import_data()
 X_train, X_test, y_train, y_test = split_data()
 SVC_crossvalidation(X_train, y_train)
-
